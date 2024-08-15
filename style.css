@@ -151,15 +151,16 @@ figcaption{
     font-size: 30px;
 }
 .product-one{
-    /* position: relative; */
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
     /* height: 450px; */
     /* border: 1px solid brown; */
-    padding: 40px 0;
+    margin: 30px 0;
     /* margin: auto; */
+    row-gap: 20px;
 }
 #p-one{
     position: absolute;
@@ -474,7 +475,339 @@ footer a {
     outline: none;
 }
 
-/* ############### MEDIA-QUERY 768px + ################ */
+/* ************** HOME ***************** */
+.Shophero{
+    position: relative;
+    width: 100%;
+    /* height: auto; */
+}    
+.shopcontent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100% ;
+}
+.Shopherobg{
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+.shopcontent h2{
+    font-size: 50px;
+}
+.filter{
+    background-color: #F9F1E7;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    /* top: 125px; */
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.categ{
+    display: flex;
+    flex-direction: row;
+}
+.filt{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 30px;   
+}
+.imgm{
+    margin-right: 20px;
+    width: 25px;
+}
+.uicons{
+    margin-right: 20px;
+}
+.imgmm{
+    width: 2px;
+    margin-right: 30px;
+}
+.showing{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.categright{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+.show1{
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: ;
+    /* flex: 1; */
+}
+#show{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+    color: #9F9F9F;  
+}
+#show1{
+    height: 40px;
+    width: 120px;
+    display: flex;
+    text-align: center;
+    background-color: white;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+    color: #9F9F9F;
+}
+
+.productsbut-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.productsbut {
+    padding: 20px 20px;
+    border: none;
+    /* border: 1px solid #B88E2F; */
+    background-color: #F9F1E7;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+.productsbut:hover{
+    background-color: #a7a7a7;
+}
+#productsbut {
+    color: black;
+    text-decoration: none;
+}
+#buta a{
+    color: white;  
+}
+#buta{
+    background-color: #B88E2F;   
+}
+.services{
+    width: 100%;
+    height: auto;
+    background-color: #FAF3EA;
+    margin-top: 30px;
+    
+}
+.servicecont, .serv{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.servicecont{
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 80px 0;
+}
+.serv img{
+    width: 50px;
+    margin-right: 10px;
+}
+.serv h4{
+    font-size: 22px;
+}
+.serv p{
+    font-size: 20px;
+}
+
+
+/* ************ PRODUCTS-DETAILS ***************** */
+.header{
+    width: 100%;
+    height: auto;
+    background-color: #F9F1E7;
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 50px;
+    padding: 10px 0;
+}
+.headcat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+}
+.headcat p{
+    padding-right: 20px;
+    color: #9F9F9F;
+}
+#headcat img{
+    padding-right: 30px;
+}
+#headcat p{
+    color: black;
+}
+#imgcart{
+    width: 30%;
+}
+
+
+.singleproduct{
+    width: 100%;
+    height: auto;
+    border: 1px solid green;
+}
+.single{
+    width: 90%;
+    height: auto;
+    border: 1px solid lightcyan;
+    display: flex;
+    margin: auto;
+}
+.display{
+    width: 50%;
+    border: 1px orange solid;
+    display: flex;
+    
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border: 1px brown solid;
+    gap: 10px;
+}
+.col{
+    width: 75px;
+    height: 62px;
+    background-color: #F9F1E7;
+    margin: 0 0 20px 0;
+    border: 1px solid green;
+    border-radius: 8px;
+}
+.col img{
+    column-gap: 40px;
+    border: 1px solid brown;
+}
+.sample{
+    background-color: #F9F1E7;
+    width: 320px;
+    height: 380px;
+    border-radius: 10px;
+}
+.coldisp{
+    margin-right: 30px;
+    
+}
+
+.rate{
+    display: flex;
+}
+.rate img{
+    width: 20px;
+    height: 20px;
+}
+.creview{
+    display: flex;
+}
+.sizes{
+    display: flex;
+    gap: 10px;
+}
+#formm{
+    width: 40px;
+    height: 40px;
+    background-color:#F9F1E7;
+    color: white;
+    border-radius: 4px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    width: 40px;
+    height: 40px;
+    background-color: #B88E2F;
+    color: white;
+    /* margin: 0 10px; */
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.colors{
+    display: flex;
+}
+.colo1{
+    width: 30px;
+    height: 30px;
+    background-color: #816DFA;
+    border-radius: 50%;
+}
+.colo2{
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.colo3{
+    width: 30px;
+    height: 30px;
+    background-color: #B88E2F;
+    border-radius: 50%;
+}
+
+.butto{
+    padding: 10px 40px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.butto1{
+    padding: 10px 40px;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 8px;
+    position: relative;
+    text-align: center;
+
+}
+.butto1::before{
+    content: "-";
+    position: absolute;
+    left: 5px;
+}
+.butto1::after{
+    content: "+";
+    position: absolute;
+    right: 5px;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+
+
+
+/* ############### MEDIA-QUERY 1024px + ################ */
 @media (max-width: 1024px) and (min-width: 768px) {
     body{
         width: 100%;
@@ -518,7 +851,7 @@ footer a {
 
 }
 
-/* ############### MEDIA-QUERY 320px + ################ */
+/* ############### MEDIA-QUERY 768px + ################ */
 @media (max-width: 768px) and (min-width: 320px) {
     body{
         width: 100%;

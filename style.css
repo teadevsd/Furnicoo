@@ -48,6 +48,7 @@ body{
 .hero{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 .herosection{
     position: absolute;
@@ -107,7 +108,7 @@ body{
     background-color: white;
     /* border: 1px solid red; */
     margin: auto;
-    margin-top: 100px;
+    margin-top: 0px;
 }
 .headone h3{
     text-align: center;
@@ -125,8 +126,8 @@ body{
     justify-content: space-evenly;  
 }
 .tags{
-    width: 345px;
-    height: 430px;
+    width: 300px;
+    height: 380px;
     /* border: 1px solid black; */
     background-color: red;
     border-radius: 16px;
@@ -641,7 +642,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 50px;
+    margin-left: 20px;
     padding: 10px 0;
 }
 .headcat{
@@ -737,7 +738,7 @@ a{
 .sizes{
     display: flex;
     /* justify-content: center; */
-    /* align-items: center; */
+    align-items: center;
     gap: 10px;
 }
 #formm{
@@ -765,7 +766,7 @@ a{
 .colors{
     display: flex;
     /* justify-content: center; */
-    /* align-items: center; */
+    align-items: center;
     gap: 8px;
 }
 .colo1{
@@ -789,13 +790,13 @@ a{
 }
 
 .butto{
-    padding: 10px 40px;
+    padding: 10px 30px;
     background-color: white;
     border: 1px solid black;
     border-radius: 8px;
 }
 .butto1{
-    padding: 10px 40px;
+    padding: 10px 30px;
     background-color: white;
     border: 1px solid grey;
     border-radius: 8px;
@@ -883,6 +884,154 @@ hr{
 }
 
 
+/* *************** CART ***************** */
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.overover{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3b3b3b34;
+    z-index: 1;
+}
+.sidebar{
+    position: absolute;
+    background-color: white;
+    height: 650px;
+    width: 420px;
+    z-index: 2;
+    right: 0;
+}
+.shopping{
+    padding: 30px;
+}
+.cartlist{
+    padding: 10px 0;
+}
+.lock{
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    justify-content: space-between;
+}
+.horiLine{
+    padding: 0 30px;
+}
+.cartlist{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.listt p:nth-last-of-type(1)::after{
+    content: "Rs. 250,000.00";
+    color: #B88E2F;
+}
+.lock h3{
+    font-size: 24px;
+}
+.stotal p:nth-of-type(2){
+    color: #B88E2F;
+}
+.stotal{
+    display: flex;
+    padding: 120px 60px 0 60px;
+    justify-content: space-between;
+}
+.horiLinetwo{
+    width: 100%;
+}
+.stbuttons{
+    display: flex;
+    gap: 10px;
+    padding: 30px 40px;
+    justify-content: space-evenly;
+}
+.stbtn{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+/* ************* COMPARISON ************** */
+.productscompare{
+    position: relative;
+    width: 100%;
+    /* height: auto; */
+}    
+.comparecontent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100% ;
+}
+.comparebg{
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+.comparecontent h2{
+    font-size: 50px;
+}
+.comPARE{
+    width: 90%;
+    height: auto;
+    border: 1px red solid;
+    
+    
+}
+.plistsrate{
+    display: flex;
+    flex-direction: row;
+    
+}
+.ProductsComparison{
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    
+}
+.comPAREDetails{
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* margin: auto; */
+}
+.prodpage{
+    width: 20%;
+}
+.prodpage h3{
+    font-size: 28px;
+    line-height: 28px;
+}
+.plistsrate, .dropd img{
+    width: 20px;
+    height: 20px;
+}
+.addA h3{
+    font-size: 28px;
+}
+.dropd{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #B88E2F;
+}
+.herosectioN{
+    display: none;
+}
+
 
 
 /* ############### MEDIA-QUERY 1024px + ################ */
@@ -896,6 +1045,48 @@ hr{
     .navicons{
         display: none;
     }
+    .herosection{
+        display: none;
+    }
+    .herosectioN{
+        display: block;
+        padding-top: 30px;
+    }
+    .herosectioN{
+        width: 70%;
+        height: auto;
+        border: 1px solid;
+        margin: 30px auto;
+        text-align: center;
+        background-color: #FFF3E3;
+        border: none;
+        border-radius: 10px;
+    }
+    .sectioN p{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .sectioN h3{
+        font-size: 30px;
+    }
+    .sectioN p:nth-last-child(2){
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 20px 0;
+    }
+    #buyY{
+        padding: 16px 40px;
+        background-color: #B88E2F;
+        border: none;
+        margin: 30px 0;
+    }
+    #buyY:hover{
+        background-color: #79580d;
+    }
+    .buyY{
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
     .logo{
         margin-left: -80px;
     }
@@ -906,31 +1097,22 @@ hr{
         display: block;
         margin-left: 500px;
     }
-    .herosection{
-       top: 400px;
-       width: 550px;
-       right: 100px;
-       /* text-align: center; */
-    }   
-    .section{
-        /* position: absolute; */
-        /* margin: 50px 50px; */
-        align-items: center;
-    }
+   
     .range{
-        margin-top: 400px;
-    }
-    .herosection .parasection{
-        font-size: 17px;
-        width: 300px; 
-         
+        margin-top: 0px;
     }
     
-
-    .single{
-        /* flex-direction: column; */
+    .informa{
+        /* border: 1px solid; */
+        font-size: 14px;
     }
-   
+    .maskchai{
+        flex-direction: column;
+     }
+     .details{
+        width: 1000%;
+     }
+    
 }
 
 /* ############### MEDIA-QUERY 768px + ################ */
@@ -952,26 +1134,48 @@ hr{
         display: none;
     }
     .herosection{
-       width: 350px;
-       top: 380px;
+        display: none;
     }
-    .section{
-        margin: 50px 50px;
-        padding: 0;
-        position: absolute;
-        align-items: center;
+    .herosectioN{
+        display: block;
+        padding-top: 30px;
     }
-    .range{
-        margin-top: 500px;
+    .herosectioN{
+        width: 70%;
+        height: auto;
+        border: 1px solid;
+        margin: 30px auto;
+        text-align: center;
+        background-color: #FFF3E3;
+        border: none;
+        border-radius: 10px;
     }
-    .herosection h3{
-        font-size: 32px;
-        line-height: 35px;
+    .sectioN p{
+        font-family: 'Courier New', Courier, monospace;
     }
-    .herosection .parasection{
+    .sectioN h3{
+        font-size: 30px;
+    }
+    .sectioN p:nth-last-child(2){
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 20px 0;
+    }
+    #buyY{
+        padding: 16px 40px;
+        background-color: #B88E2F;
+        border: none;
+        margin: 30px 0;
+    }
+    #buyY:hover{
+        background-color: #79580d;
+    }
+    .buyY{
         font-size: 16px;
-        width: 300px;  
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
     }
+   
     .content{
         text-align: center;
     }
@@ -1009,6 +1213,10 @@ hr{
         width: 100%;
         /* border: 1px solid; */
     } 
+    .informa{
+        /* border: 1px solid; */
+        font-size: 14px;
+    }
 }
 
 /* ############ MEDIA QUERY 480 ########### */
@@ -1031,15 +1239,48 @@ hr{
     #logo{
         width: 30px;
     }
-    #buy{
-        padding: 10px 30px;
-        margin-top: 20px;
-    }
     .herosection{
-        width: 300px;
-        top: 330px;
-        left:60px;
-     }
+        display: none;
+    }
+    .herosectioN{
+        display: block;
+        padding-top: 30px;
+    }
+    .herosectioN{
+        width: 70%;
+        height: auto;
+        border: 1px solid;
+        margin: 30px auto;
+        text-align: center;
+        background-color: #FFF3E3;
+        border: none;
+        border-radius: 10px;
+    }
+    .sectioN p{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .sectioN h3{
+        font-size: 30px;
+    }
+    .sectioN p:nth-last-child(2){
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 20px 0;
+    }
+    #buyY{
+        padding: 16px 40px;
+        background-color: #B88E2F;
+        border: none;
+        margin: 30px 0;
+    }
+    #buyY:hover{
+        background-color: #79580d;
+    }
+    .buyY{
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
     .combo{
         width: 100%;
         margin: auto;
@@ -1062,6 +1303,7 @@ hr{
     .tags{
         width: 250px;
         height: 320px;
+        
     }   
     .sharetext h4{
         font-size: 30px;
@@ -1075,5 +1317,9 @@ hr{
     .maskchai{
         flex-direction: column;
      }
+     .informa{
+        /* border: 1px solid; */
+        font-size: 14px;
+    }
      
 }

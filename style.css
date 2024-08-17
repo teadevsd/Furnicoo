@@ -99,23 +99,23 @@ body{
     color: white;
 }
 
-/* ############### RANGE-SECTION ################ */
+/* ############### RANGE-SECTION ############### */
 .range{
     padding-top: 50px;
     width: 80%;
     min-width: 50%;
     height: auto;
     background-color: white;
-    /* border: 1px solid red; */
     margin: auto;
     margin-top: 0px;
 }
-.headone h3{
+.rangesec{
     text-align: center;
+}
+.headone h3{
     font-size: 32px;
 }
 .headone p{
-    text-align: center;
     font-size: 20px;
     padding-bottom: 50px;
 }
@@ -128,8 +128,6 @@ body{
 .tags{
     width: 300px;
     height: 380px;
-    /* border: 1px solid black; */
-    background-color: red;
     border-radius: 16px;
 }
 figcaption{
@@ -139,7 +137,7 @@ figcaption{
     font-size: 20px;
 }
 
-/* ############### PRODUCTS-SECTION ################ */
+/* ############ PRODUCTS-SECTION ########### */
 .products{
     width: 90%;
     display: flex;
@@ -972,7 +970,7 @@ html, body{
     text-align: center;
     width: 100% ;
 }
-.comparebg{
+.comparebgbg{
     display: block;
     width: 100%;
     height: auto;
@@ -984,39 +982,42 @@ html, body{
 .comPARE{
     width: 90%;
     height: auto;
-    border: 1px red solid;
-    
-    
+    /* border: 1px red solid; */
+    margin: auto;   
 }
 .plistsrate{
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;   
 }
 .ProductsComparison{
     width: 100%;
     height: auto;
-    border: 1px solid black;
-    
+    /* border: 1px solid black; */  
 }
 .comPAREDetails{
     display: flex;
-    /* justify-content: space-evenly; */
-    /* margin: auto; */
+    justify-content: space-evenly;
+    
 }
 .prodpage{
     width: 20%;
+    margin-top: 30px;
 }
 .prodpage h3{
     font-size: 28px;
     line-height: 28px;
+    padding: 20px 0;
+}
+.prodpage p{
+    font-size: 18px;  
 }
 .plistsrate, .dropd img{
     width: 20px;
     height: 20px;
 }
 .addA h3{
-    font-size: 28px;
+    font-size: 24px;
+    margin: 20px 0;
 }
 .dropd{
     display: flex;
@@ -1028,8 +1029,76 @@ html, body{
     border-radius: 10px;
     background-color: #B88E2F;
 }
+.prodLists{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.prodLists h4{
+    font-size: 24px;
+}
 .herosectioN{
     display: none;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 30px auto;
+    border-top: 1px solid #ddd;
+    
+}
+
+th, td {
+    width: 25%; 
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+    border-right: 1px solid #ddd;
+    
+}
+
+th {
+    font-size: 20px;
+    
+}
+
+.tablebtn {
+    background-color:#B88E2F;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tablebtn:hover {
+    background-color: #fd8523;
+}
+
+/* ************* CART ************** */
+.caRt{
+    position: relative;
+    width: 100%;
+    /* height: auto; */
+}    
+.caRtcontent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100% ;
+}
+.caRtbgbg{
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+.caRtcontent h2{
+    font-size: 50px;
 }
 
 
@@ -1040,7 +1109,7 @@ html, body{
         width: 100%;
     }
     .Navlist{
-        display: none;
+        display: block;
     }
     .navicons{
         display: none;
@@ -1050,10 +1119,10 @@ html, body{
     }
     .herosectioN{
         display: block;
-        padding-top: 30px;
+        padding: 30px;
     }
     .herosectioN{
-        width: 70%;
+        width: 100%;
         height: auto;
         border: 1px solid;
         margin: 30px auto;
@@ -1095,7 +1164,7 @@ html, body{
     }
     .harm{
         display: block;
-        margin-left: 500px;
+        margin-left: 0px;
     }
    
     .range{
@@ -1128,7 +1197,7 @@ html, body{
     }
     .harm{
         display: block;
-        margin-left: 200px;
+        margin-left: 300px;
     }
     .imagebox3{
         display: none;
@@ -1138,10 +1207,10 @@ html, body{
     }
     .herosectioN{
         display: block;
-        padding-top: 30px;
+        padding: 30px;
     }
     .herosectioN{
-        width: 70%;
+        width: 100%;
         height: auto;
         border: 1px solid;
         margin: 30px auto;
@@ -1231,7 +1300,7 @@ html, body{
         padding: 0 px;
     }
     .hamburger{
-        margin-right: 150px;
+        margin-right: 0px;
     }
     .logoname{
         font-size: 20px;  
@@ -1244,10 +1313,10 @@ html, body{
     }
     .herosectioN{
         display: block;
-        padding-top: 30px;
+        padding: 30px;
     }
     .herosectioN{
-        width: 70%;
+        width: 100%;
         height: auto;
         border: 1px solid;
         margin: 30px auto;
@@ -1264,7 +1333,9 @@ html, body{
     }
     .sectioN p:nth-last-child(2){
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        padding: 20px 0;
+        padding: 20px 0px;
+        
+
     }
     #buyY{
         padding: 16px 40px;

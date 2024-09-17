@@ -8,6 +8,16 @@ body{
 
 }
 
+
+
+
+
+
+
+
+
+
+
 /* ############### NAVBAR ################ */
 .Navbar{
     width: 100%;
@@ -16,7 +26,8 @@ body{
     /* border: 1px solid; */
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 .logo{
     display: flex;
@@ -27,6 +38,13 @@ body{
 #logo{
     width: 50px;
 }
+
+.Navlist {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .Navlist .list{
     text-decoration: none;
     color: black;
@@ -38,6 +56,31 @@ body{
 .harm{
     display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ############### HERO-SECTION ################ */
@@ -98,6 +141,21 @@ body{
     text-decoration: none;
     color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ############### RANGE-SECTION ############### */
 .range{
@@ -286,6 +344,24 @@ figcaption{
     
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ############ EXPLORE ############### */
 .explore{
     width: 100%;
@@ -399,6 +475,25 @@ figcaption{
     justify-content: center;    
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ############### ROOM-SECTION ################ */
 .share{
     /* border: 1px solid pink; */
@@ -420,6 +515,24 @@ figcaption{
 hr{
     margin-top: 10px;
 } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ############### FOOTER-SECTION ################ */
 footer {
@@ -473,6 +586,24 @@ footer a {
     width: 100%;
     outline: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ************** HOME ***************** */
 .Shophero{
@@ -628,6 +759,22 @@ a{
 .serv p{
     font-size: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ************ PRODUCTS-DETAILS ***************** */
@@ -815,12 +962,13 @@ a{
 hr{
     margin-top: -20px;
 }
-.description{
+.descriptioN{
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: flex-start;
     margin-top: 20px;
+    
 }
 .descp{
     display: flex;
@@ -882,7 +1030,23 @@ hr{
 }
 
 
-/* *************** CART ***************** */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *************** SIDEBAR ***************** */
 html, body{
     height: 100%;
     margin: 0;
@@ -956,6 +1120,27 @@ html, body{
     border: 1px solid black;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ************* COMPARISON ************** */
 .productscompare{
     position: relative;
@@ -992,11 +1177,15 @@ html, body{
 .ProductsComparison{
     width: 100%;
     height: auto;
-    /* border: 1px solid black; */  
+    /* border: 1px solid black; */
+    margin: 20px 0;  
 }
 .comPAREDetails{
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     justify-content: space-evenly;
+    padding: 10px;
     
 }
 .prodpage{
@@ -1077,6 +1266,34 @@ th {
     background-color: #fd8523;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ************* CART ************** */
 .caRt{
     position: relative;
@@ -1101,18 +1318,203 @@ th {
     font-size: 50px;
 }
 
+.cartTotals{
+    width: 100%;
+}
+.CartT{
+    width: 90%;
+    height: auto;
+    /* border: 1px solid; */
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cartInvoice{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.invoicelist{
+    display: flex;
+    width: 800px;
+    height: 50px;
+    background-color: #F9F1E7;
+    justify-content: space-around;
+    align-items: center;
+}
+.ivone{
+    display: flex;
+    gap: 60px;
+    margin-left: 140px;
+}
+.ivtwo{
+    display: flex;
+    gap: 60px;
+    margin-right: 140px;
+}
+.Asg{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    align-items: center;
+    padding: 30px 0;
+}
+span{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 5px grey;
+}
+.cartBox{
+    width: 300px;
+    height: 300px;
+    background-color: #F9F1E7;
+    padding: 30px;
+    gap: 40px;
+    text-align: center;
+}
+.cartBox section{
+    display: flex;
+    padding-top: 30px;
+    gap: 70px;
+    text-align: left;
+    
+}
+.checkout{
+    padding: 10px 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 40px;
+}
+input{
+    padding: 30px 120px;
+    border-radius: 8px;
+}
+label{
+    font-size: 20px;
+    
+}
+#name{
+    padding: 25px 60px;
+    
+}
+.firstLastName{
+    display: flex;
+    gap: 10px;
+}
+.Detailsss{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* gap: 10px; */
+}
+form{
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+}
+.BDetails{
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+.Placeorder, .Detailsss{
+    width: 50%;
+    border: 1px solid;
+}
+
+.productable {
+    /* width: 90%; */
+    border-collapse: collapse;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 30px auto;
+    /* border-top: 1px solid #ddd; */
+    
+}
+
+.productable th, td {
+    width: 25%; 
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+    /* border-right: 1px solid #ddd; */
+    
+}
+
+th {
+    font-size: 30px;
+    
+}
 
 
-/* ############### MEDIA-QUERY 1024px + ################ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ######### MEDIA-QUERY 1024px + ########### */
+
 @media (max-width: 1024px) and (min-width: 768px) {
     body{
         width: 100%;
     }
     .Navlist{
-        display: block;
+        display: none;
     }
     .navicons{
         display: none;
+    }
+    .harm{
+        display: block;
+        /* margin-left: 300px; */
+        cursor: pointer;
+    }
+
+    .Navlist.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 80px;
+        background-color: white;
+        width: 150px;
+        height: auto;
+        z-index: 1;
+        box-shadow: 0 4px  8px rgba(0,0,0,0.1);
+    }
+
+    .Navlist.responsive .list{
+        display: block;
+        padding: 10px;
+        text-align: left;
+    }
+    
+    .Navlist.responsive .list:hover{
+        background-color: rgb(252, 234, 177);
     }
     .herosection{
         display: none;
@@ -1184,6 +1586,25 @@ th {
     
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ############### MEDIA-QUERY 768px + ################ */
 @media (max-width: 768px) and (min-width: 320px) {
     body{
@@ -1197,8 +1618,32 @@ th {
     }
     .harm{
         display: block;
-        margin-left: 300px;
+        /* margin-left: 300px; */
+        cursor: pointer;
     }
+
+    .Navlist.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 80px;
+        background-color: white;
+        width: 150px;
+        height: auto;
+        z-index: 1;
+        box-shadow: 0 4px  8px rgba(0,0,0,0.1);
+    }
+
+    .Navlist.responsive .list{
+        display: block;
+        padding: 10px;
+        text-align: left;
+    }
+    
+    .Navlist.responsive .list:hover{
+        background-color: rgb(252, 234, 177);
+    }
+
     .imagebox3{
         display: none;
     }
@@ -1287,6 +1732,26 @@ th {
         font-size: 14px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ############ MEDIA QUERY 480 ########### */
 @media (max-width: 480px) {
